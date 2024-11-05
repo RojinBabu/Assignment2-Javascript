@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Image Gallery | COMP1073 Client-Side JavaScript</title>
+	<link rel="stylesheet" href="css/gallery.css">
+</head>
+<body>
+	<h1>Image Gallery</h1>
+	<section id="gallery">
+		<figure>
+			<img id="featured-image" src="images/flowers-pink-large.jpg" alt="Featured Image" width="1200" height="800">
+			<figcaption id="image-caption">Pink Flowers</figcaption>
+		</figure>
+		<ul id="thumbnail-list">
+			<li><img src="images/flowers-pink-small.jpg" data-full-image="images/flowers-pink-large.jpg" alt="Pink Flowers"></li>
+			<li><img src="images/flowers-purple-small.jpg" data-full-image="images/flowers-purple-large.jpg" alt="Purple Flowers"></li>
+			<li><img src="images/flowers-red-small.jpg" data-full-image="images/flowers-red-large.jpg" alt="Red Flowers"></li>
+			<li><img src="images/flowers-white-small.jpg" data-full-image="images/flowers-white-large.jpg" alt="White Flowers"></li>
+			<li><img src="images/flowers-yellow-small.jpg" data-full-image="images/flowers-yellow-large.jpg" alt="Yellow Flowers"></li>
+		</ul>
+	</section>
+
+	<!-- Lightbox Container -->
+	<div id="lightbox" class="hidden">
+		<span id="close-lightbox">&times;</span>
+		<img id="lightbox-image" src="" alt="Lightbox Image">
+	</div>
+
+	<script src="js/gallery.js"></script>
+</body>
+</html>
